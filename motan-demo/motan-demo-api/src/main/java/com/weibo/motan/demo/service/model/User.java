@@ -14,20 +14,38 @@
  *    limitations under the License.
  */
 
+package com.weibo.motan.demo.service.model;
+
+import java.io.Serializable;
+
 /**
- *
+ * Created by zhanglei28 on 2017/8/30.
  */
-package com.weibo.controller;
+public class User implements Serializable {
+    private int id;
+    private String name;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+    public User() {
+    }
 
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
-@Controller
-public class IndexController {
+    public int getId() {
+        return id;
+    }
 
-    @RequestMapping(value = {"/", "/index"})
-    public String index() {
-        return "index";
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
