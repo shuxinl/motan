@@ -26,6 +26,7 @@ import org.apache.commons.lang3.StringUtils;
 import com.weibo.api.motan.common.MotanConstants;
 import com.weibo.api.motan.common.URLParamType;
 import com.weibo.api.motan.exception.MotanServiceException;
+import com.weibo.api.motan.util.LoggerUtil;
 import com.weibo.api.motan.util.MotanFrameworkUtil;
 
 /**
@@ -145,7 +146,6 @@ public class URL {
         if (this.parameters != null) {
             params.putAll(this.parameters);
         }
-
         return new URL(protocol, host, port, path, params);
     }
 

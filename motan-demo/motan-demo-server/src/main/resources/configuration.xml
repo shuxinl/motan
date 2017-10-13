@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GBK"?>
+<system>
+	<category name="motan" description="motan配置">
+		<item name="moduleXMLList" value="function.xml" description="模块配置文件的配置  | 分隔" />
+	</category>
+	<!-- <category name="system" description="系统相关配置">
+		<item name="isOracleSequence" value="1" description="使用oracle生成序列" />
+		<item name="isAutoIncrement" value="1" description="是否自增长" />
+		<item name="isAddLog" value="1" description="是否将日志写入日志表 0:不需要 1:需要" />
+		<item name="nolog_inout_keys" value="password,password2,oldpassword,newpassword,mobile_phone,page_content,content,brief,description,content_js" description="日志中不能打印的字段" />
+		<item name="platDataSourceId" value="web" description="系统底层使用的数据源" />
+	</category>
+	
+	<category name="fxc.system" description="系统相关配置">
+		<item name="rootPath" value="E:\\workspace\\test_workspace\\ThinkWrokWebDemo\\WebRoot" description="文件根路径"></item>
+		<item name="folderRelativePath" value="upload" description="文件夹相对路径,如果没有则不填写（xm/img）"></item>
+		<item name="encryptKey" value="fbed052f5770f88286c5ec75fb27cbfd" description="加密key"></item>
+		<item name="defaultSiteno" value="main" description="默认站点，设置后，模板发布默认获取此站点，如需要获取栏目对应站点，则不需要设置"></item>
+	</category>
+	
+	<category name="fxc.cache" description="缓存配置">
+		<item name="webDb" value="web" description="web主站点数据源id(默认取web),base包加载数据源使用" />
+		<item name="enumsSwitch" value="1" description="数据字典开关配置(1：启动，0：不启动)默认0" />
+		<item name="catalogSwitch" value="0" description="网络栏目开关配置(1：启动，0：不启动)默认0" />
+		<item name="userSwitch" value="1" description="用户信息开关配置(1：启动，0：不启动)默认0" />
+		<item name="branchSwitch" value="1" description="营业部开关配置(1：启动，0：不启动)默认0" />
+		<item name="cacheSleeptimes" value="600000" description="缓存读取时间间隔(默认600000)毫秒" />
+		<item name="cacheType" value="1" description="缓存服务器类型（1：工作平台，2：cms，默认工作平台）" />
+	</category>
+
+	<category name="onlineuser" description="在线用户相关配置">
+		<item name="isMultiUserLogin" value="0" description="是否允许多用户使用同一个账号登录 0:允许 1:不允许" />
+		<item name="logouttime" value="30" description="闲置时自动登出时间,单位为:分钟" />
+		<item name="interval" value="60" description="检查用户在线状态时间间隔,单位为:秒" />
+	</category> -->
+	
+	
+</system>

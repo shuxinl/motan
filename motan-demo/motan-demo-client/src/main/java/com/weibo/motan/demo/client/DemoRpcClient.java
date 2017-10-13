@@ -25,12 +25,14 @@ public class DemoRpcClient {
     public static void main(String[] args) throws InterruptedException {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext(new String[]{"classpath:motan_demo_client.xml"});
-
+        long start = System.currentTimeMillis();
         MotanDemoService service = (MotanDemoService) ctx.getBean("motanDemoReferer");
-        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+        for (int i = 0; i < 1; i++) {
             System.out.println(service.hello("motan" + i));
-            Thread.sleep(1000);
+            //Thread.sleep(100);
         }
+        long end = System.currentTimeMillis()-start;
+        System.err.println("使用时间：" + end);
         System.out.println("motan demo is finish.");
         System.exit(0);
     }
